@@ -1,0 +1,126 @@
+
+body{
+    background-color: #00aecc;
+}
+
+h1{
+    text-align: center;
+    font-family: Helvetica;
+    letter-spacing: 0.1em;
+    color: #21252b;
+}
+
+.backboard {
+  padding: 20px 30px;
+  max-width: 480px;
+  margin: 15px auto;
+  text-align: right;
+  font-size: 14px;
+  background: white;
+  min-height: 400px;
+
+}
+
+/*以下、②左側のコメント*/
+.alice-container {
+    width: 100%;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.alice-container .faceicon {
+    float: left;
+    margin-right: -50px;
+    width: 40px;
+}
+
+.alice-container .faceicon img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.alice-container .chatting {
+    margin-top: 20px;
+    width: 100%;
+    text-align: left;
+}
+.alice-says {
+    width:200px;
+    display: inline-block;
+    position: relative;
+    margin: 0 0 0 50px;
+    padding: 10px;
+    max-width: 250px;
+    border-radius: 12px;
+    background: #edf1ee;
+}
+
+.alice-says:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    left: -19px;
+    border: 8px solid transparent;
+    border-right: 18px solid #edf1ee;
+    -ms-transform: rotate(35deg);
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+}
+.alice-says p {
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.1em;
+    color: #505359;
+}
+
+
+
+/*以下、②左側のコメント*/
+.bob-container {
+    width: 100%;
+    margin: 10px 0;
+    /*overflow: hidden;*/
+}
+
+.bob-container .faceicon {
+    float: right;
+    margin-right: 0px;
+    width: 40px;
+}
+
+.bob-container .faceicon img{
+    margin-top: -20px;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+.bob-says {
+    margin: 20px 0;
+
+}
+.bob-says p{
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    margin: 0 10px 0 0;
+    padding: 8px;
+    max-width: 250px;
+    border-radius: 12px;
+    background: #00aecc;
+    color: white;
+}
+
+.bob-says p:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: -19px;
+    border: 8px solid transparent;
+    border-left: 18px solid #00aecc;
+    -ms-transform: rotate(-35deg);
+    -webkit-transform: rotate(-35deg);
+    transform: rotate(-35deg);
+}
